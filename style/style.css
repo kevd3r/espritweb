@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.background-container {
+  background-image: url("../assets/images/xl-bg-screen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 576px) {
+  .background-container {
+    background-image: url("../assets/images/sm-bg-screen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+.background-container header svg {
+  fill: #4E616F;
+  height: 100%;
+  max-width: 15vw;
+  max-height: 10vh;
+  filter: drop-shadow(-2px -2px 4px rgba(0, 0, 0, 0.25));
+}
+.background-container header h1 {
+  color: #4E616F;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  .background-container header h1 {
+    font-size: 1.5rem;
+  }
+}
+.background-container header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+.background-container header .navbar {
+  color: #4E616F;
+  --bs-dark-rgb: $mid-grey;
+}
+.background-container header .navbar .navbar-toggler {
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+.background-container header .navbar .navbar-toggler:hover {
+  text-decoration: none;
+  border: none;
+}
+.background-container header .navbar .navbar-toggler i {
+  color: #4E616F;
+}
+.background-container header .navbar .nav-link {
+  font-size: 1.3rem;
+  color: "Montserrat", sans-serif;
+  --bs-nav-link-color: #4E616F;
+}
+.background-container header .navbar .active {
+  --bs-navbar-active-color: $mid-grey;
+  border-bottom: 1px solid #4E616F;
+}
+
+header svg {
+  fill: rgba(217, 217, 217, 0.14);
+  height: 100%;
+  max-width: 15vw;
+  max-height: 10vh;
+  filter: drop-shadow(-2px -2px 4px rgba(0, 0, 0, 0.25));
+}
+header h1 {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+header p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1rem;
+}
+header .navbar {
+  color: white;
+  --bs-dark-rgb: $light-color;
+}
+header .navbar .navbar-toggler {
+  text-decoration: none;
+  border: none;
+  box-shadow: none;
+}
+header .navbar .navbar-toggler i {
+  color: white;
+}
+header .navbar .nav-link {
+  font-size: 1.3rem;
+  color: "Montserrat", sans-serif;
+  --bs-nav-link-color: white;
+}
+header .navbar .active {
+  --bs-navbar-active-color: $light-color;
+  border-bottom: 1px solid white;
+}
+
+.homepage {
+  height: 95vh;
+  align-items: center;
+}
+.homepage h5 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.other-pages {
+  align-items: center;
+}
+.other-pages h2 {
+  color: white;
+  font-weight: bold;
+}
+
+aside .aside-title {
+  background: #4E616F;
+  color: white;
+}
+
+footer {
+  background-color: #4E616F;
+  justify-content: center;
+}
+footer .mobile-content {
+  color: white;
+}
+footer .mobile-content a {
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .mobile-content a i {
+  font-size: 1.5rem;
+}
+footer .mobile-content a:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: #4E616F;
+}
+footer .desktop-content .nav .nav-link {
+  color: white;
+}
+footer .desktop-content .nav .active {
+  color: white;
+}
+
+.btn-scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10vh;
+  right: 2px;
+  z-index: 1000;
+}
+.btn-scroll-to-top i {
+  font-size: 3rem;
+}
+
+.outer-pages {
+  background-size: cover;
+  background: rgb(78, 97, 111);
+  background: linear-gradient(140deg, rgb(78, 97, 111) 0%, rgb(0, 0, 0) 100%);
+}
+
+.homepage-card {
+  color: white;
+  background: rgba(78, 97, 111, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  --bs-card-border-color: white;
+  --bs-card-bg: none;
+}
+.homepage-card .card-img-top {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.homepage-card .card-body {
+  flex-direction: column;
+  height: 50%;
+  overflow: hidden;
+}
+.homepage-card .card-body .card-title {
+  background: white;
+  color: #4E616F;
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+}
+.homepage-card .card-body .card-text {
+  overflow: hidden;
+  max-height: 40%;
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.especial .card {
+  --bs-card-border-color: #4E616F;
+  --bs-card-bg: none;
+  height: 55vh;
+  box-shadow: 2px 2px 4px black;
+}
+.especial .card .card-img-top {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.especial .card .card-body {
+  flex-direction: column;
+  height: 60%;
+  overflow: hidden;
+}
+.especial .card .card-body .head-title {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+}
+.especial .card .card-body .card-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.especial .card .card-body .card-text {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.especial .card .card-body .card-content {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn {
+  --bs-btn-font-weight: bold;
+}
+
+.btn-primary {
+  --bs-btn-color: white;
+  --bs-btn-bg: none;
+  --bs-btn-border-color: white;
+  --bs-btn-hover-color: #4E616F;
+  --bs-btn-hover-bg: white;
+  --bs-btn-hover-border-color: #4E616F;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #4E616F;
+  --bs-btn-active-bg: white;
+  --bs-btn-active-border-color: white;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: white;
+}
+
+.description {
+  background: white;
+}
+
+.description-card {
+  background: white;
+  box-shadow: 2px 2px 4px lightgrey;
+}
+.description-card h3 {
+  color: #4E616F;
+  font-size: 1.5rem;
+}
+.description-card h4 {
+  color: #4E616F;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.description-card p {
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+.description-card img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .description-card img {
+    max-width: 50%;
+    width: auto;
+  }
+}
+
+.ego-main h1 {
+  color: white;
+}
+.ego-main .ego-image .citation {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  align-self: center;
+}
+.ego-main .ego-image .img-fluid {
+  border: 5px solid white;
+  background-size: cover;
+}
+.ego-main p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.ego-main .ego-end .img-fluid {
+  border: 5px solid white;
+  background-size: cover;
+  margin: 0;
+}
+.ego-main .ego-end p {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  align-self: center;
+}
+
+.contact-main .contact-first {
+  border-radius: 2rem;
+  border: 2px solid white;
+}
+.contact-main .contact-first h2 {
+  font-size: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+  color: white;
+}
+.contact-main .contact-first p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-main .formulaire {
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+.contact-main .formulaire .form-title h2 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Source Code Pro", monospace;
+}
+.contact-main .formulaire .form-label {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-main .formulaire .form-input {
+  font-family: "Montserrat", sans-serif;
+}
+
+.description-homepage {
+  align-items: center;
+}
+.description-homepage .image-resize {
+  max-height: 100%;
+}
+.description-homepage .image-resize img {
+  max-height: 100%;
+  width: auto;
+  box-shadow: 2px 2px 4px #4E616F;
+}
+@media (max-width: 768px) {
+  .description-homepage .image-resize img {
+    max-height: 30vh;
+    width: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

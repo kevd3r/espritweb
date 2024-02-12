@@ -1,0 +1,23 @@
+#ignore img files
+*.jpeg
+*.jpg
+*.png
+
+#ignoring node_modules
+/node_modules/
+
+#ignoring .txt && .pdf files
+*.txt
+*.pdf
+
+# Ignorer les fichiers système
+.DS_Store
+Thumbs.db
+
+# Ignorer les fichiers de configuration spécifiques à l'éditeur
+.vscode/
+.phpstorm.meta.php
+.idea/
+
+#ignorer les .xml comme les sitemaps
+*.xml
