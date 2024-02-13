@@ -102,13 +102,9 @@ app.post("/contact", (req, res) => {
   </body>
   
   </html>
-
-
-
-
-
   `);
 });
+
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);

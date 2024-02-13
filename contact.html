@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="./style/style.css">
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <title>Esprit Web - Contact</title>
 </head>
 
@@ -29,34 +29,34 @@
         </p>
       </div>
       <div class="form-container col-12 d-flex justify-content-center mb-5 form">
-        <div class="row g-2 col-10 col-md-8 col-lg-6 col-xl-4 formulaire p-md-5 p-2">
-          <form action="/contact" enctype="application/json" method="post" role="form" id="form">
+        <div class="row g-2 col-10 col-md-8 col-lg-6 col-xl-4 formulaire p-md-5 p-2" class="row">
+          <form action="/contact" enctype="application/json" method="post" role="form" id="form" class="row">
+        
             <div class="form-title">
               <h2 class="text-center pb-3">[Formulaire de Contact]</h2>
             </div>
-            <div class="mb-3 col-12 col-md-6 form-group">
+            <div class="g-recaptcha " data-sitekey="6LfaknEpAAAAAE2HF-YtUa7vy_PGvBaPjcqXPQGM"></div>
+            <div class="mb-3 col-12 col-md-6">
               <label for="firstname" class="form-label">Votre Prénom </label>
-              <input type="text" class="form-control" id="firstname" placeholder="Votre Prénom" name="firstname"
+              <input type="text" class="form-control" id="firstname" placeholder="Votre Prénom" name="firstname" autocomplete="given-name"
                 required>
-
             </div>
-            <div class="mb-3 col-12 col-md-6 form-group">
+            <div class="mb-3 col-12 col-md-6">
               <label for="lastname" class="form-label">Votre Nom</label>
-              <input type="text" class="form-control" id="lastname" placeholder="Votre Nom" name="lastname" required>
+              <input type="text" class="form-control" id="lastname" placeholder="Votre Nom" name="lastname" required autocomplete="family-name">
             </div>
-            <div class="mb-3 form-group">
+            <div class="mb-3 ">
               <label for="email" class="form-label">Votre email</label>
-              <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.com" name="email"
+              <input type="email" class="form-control" id="email" placeholder="votreadresse@mail.com" name="email" autocomplete="email"
                 required>
             </div>
-            <div class="mb-3 form-group">
+            <div class="mb-3 ">
               <label for="message" class="form-label">Votre Message</label>
               <textarea class="form-control" id="message" rows="5" name="message" placeholder="Votre message ici ..."
                 required></textarea>
             </div>
             <div class="col-12 pb-3">
-              <button class="btn btn-primary col-12 g-recaptcha" data-sitekey="reCAPTCHA_site_key"
-                data-callback='onSubmit' data-action='submit' type="submit" id="submitBtn">Valider</button>
+              <button class="btn btn-primary col-12 "  type="submit" id="submitBtn">Valider</button>
           </form>
 
         </div>
@@ -79,8 +79,8 @@
 
   <button title="scroll to top button" type="button" id="btnScrollToTop" class="btn btn-scroll-to-top"><i
       class="bi bi-arrow-up-circle-fill"></i></button>
-
-
+ 
+   
   <script src="./scripts/header.js"></script>
   <script src="./scripts/footer.js"></script>
   <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>

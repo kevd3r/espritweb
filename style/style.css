@@ -358,6 +358,14 @@ footer .desktop-content .nav .active {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+.contact-main .contact-first p a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+.contact-main .contact-first p:hover {
+  transform: scale(1.1);
+}
 .contact-main .formulaire {
   border: 2px solid white;
   border-radius: 2rem;

@@ -73,7 +73,7 @@ menuBtn.addEventListener('click',(e)=>{
 
 // déterminer la couleur du .svg
 let logo= document.querySelector('.container-fluid a')
-console.log(logo.innerHTML)
+
 let page= window.location.pathname;
 
 function goodLogoColor(){

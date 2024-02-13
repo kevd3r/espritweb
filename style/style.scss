@@ -414,6 +414,14 @@ footer {
     p{
       color: $light-color;
       font-family: $font-text;
+      a{
+        text-decoration: none;
+        color: $light-color;
+        font-weight: bold;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
     }
   }
   .formulaire{

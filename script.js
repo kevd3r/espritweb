@@ -42,18 +42,10 @@ function addBorder(){
 }
 addBorder();
 
-// const form= document.querySelector('form');
-// const submitBtn = document.getElementById('submitBtn')
-// submitBtn.addEventListener('click', function(){
-//   event.preventDefault();
-//   // let formData= new FormData(this);
-//   let firstName = document.getElementById('firstname').value
-//   let lastName = document.getElementById('lastname').value
-//   let email = document.getElementById('email').value
-//   let message = document.getElementById('message').value
-//   console.log(firstName, lastName, email, message);
-//    // Validation des données du formulaire
- 
+function onSubmit(token) {
+  document.getElementById("form").submit();
+}
+
 
 
 
