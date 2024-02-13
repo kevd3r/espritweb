@@ -391,4 +391,14 @@ footer .desktop-content .nav .active {
     max-height: 30vh;
     width: auto;
   }
+}
+
+.response {
+  height: 90vh;
+}
+.response main {
+  padding-top: 25vh;
+}
+.response h2, .response p {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

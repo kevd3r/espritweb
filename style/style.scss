@@ -453,3 +453,13 @@ footer {
     }
   }
 }
+
+.response{
+  height: 90vh;
+  main{
+    padding-top: 25vh;
+  }
+  h2, p{
+    color: $light-color;
+  }
+}
