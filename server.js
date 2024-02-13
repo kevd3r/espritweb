@@ -14,15 +14,7 @@ app.get("/", (req, res) => {
 });
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.hostinger.com",
-  port: 587,
-  // Specify STARTTLS explicitly
-  tls: {
-    rejectUnauthorized: false, // Optionally disable certificate verification for testing
-  },
-  auth: {
-    user: "kevin.derot@espritweb.io",
-    pass: "5tGNjCx#*iZE*C",
+ 
   },
 });
 
